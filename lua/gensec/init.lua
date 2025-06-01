@@ -47,7 +47,7 @@ function M.insert_section()
 			return
 		end
 
-		local filetype = vim.opt.filetype
+		local filetype = vim.bo.filetype
 		local comment_type = choose_comment_type(filetype)
 		local section_text = M.generate_section(input, comment_type)
 
